@@ -1,0 +1,48 @@
+.certified-instructor {
+  width: 296px;
+  height: 176px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 32px;
+  border-radius: 16px;
+  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.04);
+  background-color: #fff;
+  font-family: "Poppins";
+}
+
+.certified-instructor > h2 {
+  font-weight: 500;
+  color: #1a2434;
+}
+
+.certified-instructor > .instructors-box{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.certified-instructor > .instructors-box > .main {
+  display: flex;
+  gap: 8px;
+
+  .img-box {
+    margin-bottom: 0;
+  }
+
+  .detail-box > h3 {
+    font-weight: 500;
+    color: #1a2434;
+    margin-bottom: 0;
+    line-height: 1.4;
+  }
+  .detail-box > p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #575455;
+    margin-bottom: 0;
+    line-height: 1.4;
+  }
+}

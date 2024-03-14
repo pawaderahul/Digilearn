@@ -1,0 +1,35 @@
+@import "/node_modules/bootstrap/scss/functions";
+@import "/node_modules/bootstrap/scss/variables";
+@import "/node_modules/bootstrap/scss/mixins";
+@import "../../styles/variables";
+
+.search-desktop {
+  height: 55px;
+  width: 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  border-radius: 8px;
+  border: solid 1px $border-color;
+  background-color: white;
+}
+
+.search-desktop > label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+}
+
+.search-desktop > label > input#search-input {
+  border: 0;
+  font-family: "Outfit";
+  width: 100%;
+
+  &::placeholder {
+    font-size: 16px;
+  }
+}

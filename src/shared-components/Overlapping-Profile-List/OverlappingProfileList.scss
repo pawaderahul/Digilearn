@@ -1,0 +1,31 @@
+@import "../../styles/variables";
+
+.profiles-container {
+  display: flex;
+  height: 80px;
+  position: relative;
+}
+
+.profiles-container > .profile {
+  position: absolute;
+}
+
+.profiles-container > .profile.tail {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.12);
+  border: solid 4px $color-white-background;
+  background-color: $color-wine-red;
+  margin: 8px 0 0 6px;
+
+  p {
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 5.5rem;
+    letter-spacing: 0.32px;
+    color: white;
+    text-align: center;
+  }
+}

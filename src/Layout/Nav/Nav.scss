@@ -1,0 +1,180 @@
+@import "/node_modules/bootstrap/scss/functions";
+@import "/node_modules/bootstrap/scss/variables";
+@import "/node_modules/bootstrap/scss/mixins";
+@import "../../styles/variables";
+
+.navbar {
+  height: 95px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: $color-white-background;
+  z-index: 99999;
+
+  @include media-breakpoint-between(lg, xl) {
+    padding: 20px 40px;
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 20px;
+
+    .icon-box {
+      display: none;
+    }
+  }
+  @include media-breakpoint-up(lg);
+}
+
+.navbar > .menu {
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+  @include media-breakpoint-down(lg) {
+    border: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+    svg {
+      scale: 2;
+      color: $color-slategray;
+    }
+    &:hover {
+      background-color: $color-lightgray;
+    }
+  }
+}
+
+.navbar > .sidebar-menu {
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+  @include media-breakpoint-down(lg) {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    padding-bottom: 50px;
+    background-color: white;
+
+    &.show {
+      left: 0;
+      transition: all ease 0.5;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .btn-wrapper {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+
+    .menu-list {
+      list-style-type: none;
+      margin-top: 95px;
+      text-align: center;
+      padding: 0 30px;
+
+      li {
+        font-size: 2.5rem;
+        margin-bottom: 5px;
+      }
+      li > a {
+        color: $text-color;
+        text-decoration: none;
+      }
+      .sub-menu-list {
+        display: none;
+        list-style-type: none;
+        border-bottom: 1px solid $color-slategray;
+
+        li {
+          font-size: 2.2rem;
+        }
+
+        &.show {
+          display: block;
+        }
+      }
+
+      button {
+        border: 0;
+        background-color: transparent;
+      }
+      button > svg {
+        color: $color-slategray;
+      }
+    }
+  }
+}
+
+.navbar > .nav-list-box {
+  display: flex;
+  gap: 48px;
+
+  @include media-breakpoint-between(lg, xl) {
+    gap: 36px;
+  }
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+
+  a,
+  button {
+    font-size: 20px;
+    font-family: "Outfit";
+    color: $text-color;
+    cursor: pointer;
+  }
+  button > img {
+    margin-left: 4px;
+  }
+  .dropdown-toggle::after {
+    display: none;
+  }
+
+  .dropdown > button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+  }
+}
+
+.navbar > .search-box {
+  display: flex;
+
+  .search-desktop {
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+
+  .search-mobile {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    &:hover {
+      background-color: $color-lightgray;
+    }
+
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+  }
+
+  .cart {
+    margin-right: 24px;
+    cursor: pointer;
+  }
+}
+
+.modal {
+  margin-top: 90px;
+}
+.modal-header form {
+  width: 100%;
+}
