@@ -1,0 +1,41 @@
+@import "../../styles/variables";
+
+.experience-card {
+  height: 361px;
+  width: 296px;
+  border-radius: 16px;
+  padding: 24px;
+  border: solid 1px $border-color;
+}
+
+.experience-card > .title {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 600;
+  color: $text-color;
+  line-height: 1.2;
+  margin-top: 22px;
+}
+
+.experience-card > .subtitle {
+  margin: 25px 0 22px;
+}
+
+.experience-card > :is(.subtitle, .link) {
+  opacity: 0.7;
+  font-family: "Inter";
+  line-height: 1.8;
+  letter-spacing: 0.4px;
+  color: $text-color;
+}
+
+.experience-card > .link {
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: unset;
+
+  svg {
+    margin-left: 15px;
+  }
+}

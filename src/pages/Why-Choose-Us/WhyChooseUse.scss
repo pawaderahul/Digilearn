@@ -1,0 +1,76 @@
+@import "../../styles/variables";
+@import "../../styles/breakpoints";
+
+.why-choose-us {
+  height: 689px;
+  width: 100%;
+  padding: 80px;
+
+  .primary-container > p {
+    font-size: 36px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .primary-container > .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 15px;
+  }
+  .primary-container > .flex-container > .horizontal-line {
+    width: 64px;
+    height: 4px;
+    background-color: $color-wine-red;
+  }
+  .primary-container > .flex-container > h1 {
+    opacity: 0.7;
+    font-family: "Inter";
+    line-height: 1.2;
+    letter-spacing: 0.48px;
+    margin-bottom: 0;
+    color: $text-color;
+  }
+
+  .secondary-container {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 79px;
+  }
+}
+
+@include media-breakpoint-down(xxl) {
+  .why-choose-us {
+    padding: 80px 15px;
+
+    .secondary-container {
+      gap: 12px;
+    }
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .why-choose-us {
+    height: fit-content;
+  }
+  .why-choose-us > .secondary-container {
+    display: grid;
+    grid-template-columns: 325px 325px;
+
+    .experience-card {
+      width: auto;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .why-choose-us {
+    padding-inline: 24px;
+  }
+  .why-choose-us > .secondary-container {
+    grid-template-columns: 325px;
+  }
+}
