@@ -1,6 +1,4 @@
-@import "/node_modules/bootstrap/scss/functions";
-@import "/node_modules/bootstrap/scss/variables";
-@import "/node_modules/bootstrap/scss/mixins";
+@import "../../styles/breakpoints";
 @import "../../styles/variables";
 
 .navbar {
@@ -25,7 +23,9 @@
       display: none;
     }
   }
-  @include media-breakpoint-up(lg);
+  @include media-breakpoint-down(md){
+    padding: 10px;
+  };
 }
 
 .navbar > .menu {

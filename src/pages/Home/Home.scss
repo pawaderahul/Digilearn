@@ -1,4 +1,5 @@
 @import "../../styles/variables";
+@import "../../styles/breakpoints";
 
 .home {
   height: 929px;
@@ -110,5 +111,78 @@
     position: absolute;
     top: 33.5px;
     right: 328px;
+  }
+}
+
+@include media-breakpoint-down(xxl) {
+  .home > .absolute-container .instructor-card {
+    bottom: 20px;
+    top: unset;
+    right: 54.5px;
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .home {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  .home :is(.title, .subtitle) {
+    text-align: center;
+  }
+  .home > .students-box {
+    border: 0;
+    padding: 0;
+    h2 {
+      text-align: center;
+    }
+    .profiles-container {
+      width: 230px;
+    }
+  }
+  .home > .brands-container {
+    text-align: center;
+  }
+  .home > .absolute-container {
+    position: relative;
+    right: unset;
+    top: 40px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .home {
+    padding: 20px 10px;
+  }
+  .home > .title {
+    width: 100%;
+    font-size: 46px;
+  }
+  .home > .subtitle {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  .home > .btn-container {
+    flex-direction: column;
+    margin-block: 30px;
+
+    .btn {
+      height: 50px;
+      width: 28rem;
+      padding: 10px 0;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+  .home > .brands-container > .brands-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 12px;
+
+    .brand{ width: auto; }
   }
 }
