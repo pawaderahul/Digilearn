@@ -162,7 +162,8 @@
 
 @include media-breakpoint-down(md) {
   .home {
-    padding: 20px 12px 86px;
+    padding: 35px 12px 86px;
+    margin-bottom: 0px;
   }
   .home > .title {
     width: 100%;

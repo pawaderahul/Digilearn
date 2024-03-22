@@ -18,14 +18,14 @@ const Nav = () => {
 
   return (
     <section className="navbar">
-      <section className="icon-box">
+      <a className="icon-box" href="#home">
         <img src="/assets/logo/Logo.svg" alt="Digilearn Logo" />
-      </section>
+      </a>
       <button className="menu" onClick={() => setSidebarOpen(true)}>
         <IoMdMenu />
       </button>
       <section className="nav-list-box">
-        <a>About us</a>
+        <a href="#about-us">About us</a>
         <Dropdown>
           <Dropdown.Toggle>
             Our Class
@@ -60,9 +60,9 @@ const Nav = () => {
         <button className="btn-wrapper" onClick={() => setSidebarOpen(false)}>
           <IoMdClose />
         </button>
-        <ul className="menu-list">
+        <ul className="menu-list" onClick={() => setSidebarOpen(false)}>
           <li>
-            <a href="">About us</a>
+            <a href="#about-us">About us</a>
           </li>
           <li>
             <button onClick={toggleSubMenuList}>

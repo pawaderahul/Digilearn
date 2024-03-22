@@ -1,0 +1,31 @@
+@import "../../styles/breakpoints";
+@import "../../styles/variables";
+
+.move-to-top {
+  display: none;
+}
+
+@include media-breakpoint-down(lg) {
+  .move-to-top {
+    display: block;
+
+    button {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      height: 64px;
+      width: 64px;
+      border-radius: 50%;
+      border: 0;
+      background-color: $color-wine-red;
+      color: white;
+    }
+
+    figure {
+      margin: 0;
+    }
+    figure > svg {
+      font-size: 24px;
+    }
+  }
+}

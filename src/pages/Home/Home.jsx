@@ -14,7 +14,7 @@ const brandList = [`Google.png`, `Amazon.png`, `Canva.png`, `Sketch.png`];
 
 const Home = () => {
   return (
-    <section className="home">
+    <section id="home" className="home">
       <h1 className="title">
         Master Digital Skills
         <br /> with Ease!
