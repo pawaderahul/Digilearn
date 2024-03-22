@@ -1,4 +1,5 @@
 import ExperienceCard from "../../shared-components/Experience-Card/ExperienceCard";
+import Title from "../../shared-components/Title/Title";
 import "./WhyChooseUse.scss";
 
 const experienceData = [
@@ -28,10 +29,7 @@ const WhyChooseUse = () => {
   return (
     <section className="why-choose-us">
       <section className="primary-container">
-        <section className="flex-container">
-          <div className="horizontal-line"></div>
-          <h1>Why choose us</h1>
-        </section>
+        <Title title={"Why choose us"} />
         <p>Best Learning Experience</p>
       </section>
       <section className="secondary-container">
