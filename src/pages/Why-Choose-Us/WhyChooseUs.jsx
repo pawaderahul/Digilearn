@@ -1,6 +1,6 @@
 import ExperienceCard from "../../shared-components/Experience-Card/ExperienceCard";
 import Title from "../../shared-components/Title/Title";
-import "./WhyChooseUse.scss";
+import "./WhyChooseUs.scss";
 
 const experienceData = [
   {
@@ -25,7 +25,7 @@ const experienceData = [
   },
 ];
 
-const WhyChooseUse = () => {
+const WhyChooseUs = () => {
   return (
     <section className="why-choose-us">
       <section className="primary-container">
@@ -48,4 +48,4 @@ const WhyChooseUse = () => {
   );
 };
 
-export default WhyChooseUse;
+export default WhyChooseUs;

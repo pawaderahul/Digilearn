@@ -1,0 +1,133 @@
+@import "../../styles/variables";
+@import "../../styles/breakpoints";
+
+.our-class {
+  height: 1100px;
+  padding: 80px;
+}
+
+.our-class > h1 {
+  font-family: "Plus Jakarta Sans";
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  color: $text-color;
+}
+
+.our-class > .switch-wrapper-desktop {
+  display: flex;
+  width: 754px;
+  height: 77px;
+  padding: 8px;
+  border-radius: 40px;
+  background-color: #f4f4f4;
+  margin: 80px auto;
+
+  .switch-option {
+    width: calc(100% / 3);
+    border-radius: 40px;
+    text-align: center;
+    opacity: 0.7;
+    font-family: "Inter";
+    font-size: 24px;
+    line-height: 2.5;
+    letter-spacing: 0.48px;
+    color: $color-darkgray;
+    background-color: transparent;
+    border: 0;
+
+    &.active {
+      background: white;
+    }
+  }
+}
+
+.our-class > .switch-content {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.our-class > .btn {
+  width: 307px;
+  height: 72px;
+  border-radius: 16px;
+  background-color: $color-wine-red;
+  display: flex;
+  gap: 16px;
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  color: white;
+  border: 0;
+  justify-content: center;
+  align-items: center;
+  margin: 80px auto 0;
+}
+
+@include media-breakpoint-down(xl) {
+  .our-class {
+    height: fit-content;
+    padding-inline: 20px;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .our-class {
+    padding-block: 32px;
+  }
+  .our-class > .switch-wrapper-desktop {
+    display: none;
+  }
+  .our-class > .switch-wrapper-mobile {
+    width: fit-content;
+    margin: 32px auto;
+
+    .dropdown > .dropdown-toggle {
+      height: 50px;
+      width: 80vw;
+      border-radius: 12px;
+      max-width: 28rem;
+      font-size: 21px;
+      font-family: "Inter";
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background: transparent;
+      color: $color-darkgray;
+      border-color: $color-darkgray;
+    }
+    .dropdown > .dropdown-menu {
+      width: 100%;
+
+      a {
+        height: 42px;
+        font-size: 20px;
+        font-family: "Inter";
+        line-height: 1.5;
+        padding-block: 5px;
+      }
+    }
+  }
+
+  .our-class > .btn{
+    margin-top: 42px;
+  }
+
+  .our-class > .switch-content {
+    flex-wrap: wrap;
+    gap: 14px;
+
+    .course-card {
+      width: 302px;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .our-class > .switch-wrapper-mobile {
+    display: none;
+  }
+}
