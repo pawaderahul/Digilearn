@@ -1,0 +1,81 @@
+@import "../../styles/variables";
+@import "../../styles//breakpoints";
+
+.course-card {
+  width: 302px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid $border-color;
+}
+
+.course-card > .image-wrapper {
+  margin: 0;
+
+  img {
+    margin: 0;
+  }
+}
+
+.course-card > .content {
+  padding: 16px 22px;
+
+  h1 {
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: $color-darkgray;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    min-height: 102px;
+  }
+
+  .primary-stats-container,
+  .secondary-stats-container {
+    display: flex;
+    justify-content: space-between;
+    height: 17px;
+
+    .stat {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .primary-stats-container {
+    margin: 24px 0;
+  }
+
+  .primary-stats-container > .stat > p {
+    font-family: "Inter";
+    font-size: 14px;
+    letter-spacing: 0.28px;
+    color: $color-darkgray;
+  }
+
+  .secondary-stats-container > .stat > p {
+    opacity: 0.7;
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    color: $color-darkgray;
+  }
+}
+
+@include media-breakpoint-down(xl){
+    .course-card > .content{
+        padding: 16px 12px;
+    }
+    .course-card > .content > h1{
+        font-size: 20px;
+        min-height: 84px;
+    }
+}
