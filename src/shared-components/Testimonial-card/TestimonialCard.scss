@@ -1,0 +1,66 @@
+@import "../../styles/variables";
+@import "../../styles/main";
+@import "../../styles/breakpoints";
+
+.testimonial-card {
+  padding: 32px;
+  height: 259px;
+  max-width: 405px;
+  border-radius: 16px;
+  background-color: white;
+}
+
+.testimonial-card > .primary-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+
+  .profile-pic {
+    height: 91px;
+    width: 91px;
+  }
+  .details > :is(.name, .occupation),
+  .details > figure > figcaption {
+    opacity: 0.7;
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    color: $text-color;
+  }
+  .details > .name {
+    margin-bottom: 8px;
+    @include lineEllipsis;
+    -webkit-line-clamp: 1;
+  }
+  .details > .occupation {
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+    @include lineEllipsis;
+    -webkit-line-clamp: 2;
+  }
+  .details > figure {
+    display: flex;
+    gap: 6px;
+  }
+}
+
+.testimonial-card > .secondary-container > p {
+  opacity: 0.7;
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.32px;
+  color: $text-color;
+  @include lineEllipsis;
+  -webkit-line-clamp: 4;
+}
+
+@include media-breakpoint-down(xxl) {
+  .testimonial-card {
+    padding: 14px;
+  }
+}

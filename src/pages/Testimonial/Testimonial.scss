@@ -1,0 +1,51 @@
+@import "../../styles/variables";
+@import "../../styles/breakpoints";
+
+.testimonial {
+  height: 587px;
+  padding: 80px;
+  background-color: $color-secondary-background;
+}
+
+.testimonial > h1 {
+  font-family: "Plus Jakarta Sans";
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  color: $text-color;
+}
+
+.testimonial > .card-container {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 80px;
+}
+
+@include media-breakpoint-down(xl) {
+  .testimonial {
+    height: fit-content;
+    padding: 60px 20px 80px;
+  }
+  .testimonial > .card-container {
+    margin-top: 40px;
+    gap: 14px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .testimonial {
+    padding: 24px 20px 36px;
+  }
+  .testimonial > .card-container {
+    flex-direction: column;
+    align-items: center;
+
+    .testimonial-card {
+      max-width: 460px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+  }
+}
