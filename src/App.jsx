@@ -4,6 +4,7 @@ import WhyChooseUs from "./pages/Why-Choose-Us/WhyChooseUs";
 import AboutUs from "./pages/About-Us/AboutUs";
 import MoveToTop from "./shared-components/Move-To-Top/MoveToTop";
 import OurClass from "./pages/Our-Class/OurClass";
+import Testimonial from "./pages/Testimonial/Testimonial";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <WhyChooseUs />
       <AboutUs />
       <OurClass />
+      <Testimonial />
 
       <MoveToTop />
     </>
