@@ -1,5 +1,6 @@
 @import "../../styles/variables";
 @import "../../styles/breakpoints";
+@import "../../styles/main";
 
 .about-us {
   height: 820px;
@@ -31,11 +32,8 @@
     }
   }
   .data-container > h1 {
-    font-family: "Plus Jakarta Sans";
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 1.2;
-    color: $text-color;
+    @include pageHeadline;
+    text-align: left;
     margin-bottom: 40px;
   }
   .data-container > p {
@@ -48,18 +46,7 @@
     margin-bottom: 17px;
   }
   .data-container > .btn {
-    height: 72px;
-    width: 307px;
-    display: flex;
-    gap: 16px;
-    border-radius: 16px;
-    background-color: $color-wine-red;
-    font-size: 20px;
-    font-family: "Inter";
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 0.4px;
-    color: white;
+    @include primary-button;
   }
 }
 

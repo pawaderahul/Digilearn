@@ -23,8 +23,8 @@ const Nav = () => {
       <section className="nav-list-box">
         <a href="#about-us">About us</a>
         <a href="#our-class">Our class</a>
-        <a>Blog</a>
-        <a>Contact</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
       </section>
       <section className="search-box">
         <img
@@ -54,10 +54,10 @@ const Nav = () => {
             <a href="#our-class">Our class</a>
           </li>
           <li>
-            <a href="">Blog</a>
+            <a href="#blog">Blog</a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </section>

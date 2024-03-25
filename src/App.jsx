@@ -5,6 +5,7 @@ import AboutUs from "./pages/About-Us/AboutUs";
 import MoveToTop from "./shared-components/Move-To-Top/MoveToTop";
 import OurClass from "./pages/Our-Class/OurClass";
 import Testimonial from "./pages/Testimonial/Testimonial";
+import Blog from "./pages/Blog/Blog";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <AboutUs />
       <OurClass />
       <Testimonial />
+      <Blog/>
 
       <MoveToTop />
     </>

@@ -1,5 +1,6 @@
 @import "../../styles/variables";
 @import "../../styles/breakpoints";
+@import "../../styles/main";
 
 .testimonial {
   height: 587px;
@@ -8,11 +9,7 @@
 }
 
 .testimonial > h1 {
-  font-family: "Plus Jakarta Sans";
-  font-size: 36px;
-  font-weight: 600;
-  text-align: center;
-  color: $text-color;
+  @include pageHeadline;
 }
 
 .testimonial > .card-container {
