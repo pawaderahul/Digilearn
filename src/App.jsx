@@ -6,6 +6,7 @@ import MoveToTop from "./shared-components/Move-To-Top/MoveToTop";
 import OurClass from "./pages/Our-Class/OurClass";
 import Testimonial from "./pages/Testimonial/Testimonial";
 import Blog from "./pages/Blog/Blog";
+import Contact from "./pages/Contact/Contact";
 
 const App = () => {
   return (
@@ -16,7 +17,8 @@ const App = () => {
       <AboutUs />
       <OurClass />
       <Testimonial />
-      <Blog/>
+      <Blog />
+      <Contact />
 
       <MoveToTop />
     </>
