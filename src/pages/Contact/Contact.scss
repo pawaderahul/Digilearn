@@ -1,0 +1,78 @@
+@import "../../styles/variables";
+@import "../../styles/breakpoints";
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  height: 248px;
+  padding: 80px;
+  gap: 160px;
+  background-color: $color-wine-red;
+}
+
+.contact > h1 {
+  width: 50%;
+  max-width: 560px;
+  font-family: "Plus Jakarta Sans";
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: white;
+}
+
+.contact > .email-container {
+  height: 88px;
+  width: 50%;
+  max-width: 560px;
+  display: flex;
+  gap: 8px;
+  padding: 8px 8px 8px 40px;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.7);
+
+  img {
+    width: 30px;
+  }
+
+  input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    opacity: 0.7;
+    font-family: "Inter";
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    color: $text-color;
+  }
+
+  button {
+    width: 187px;
+    border: 0;
+    background-color: $text-color;
+    border-radius: 16px;
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    color: white;
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 45px;
+    padding: 60px 20px;
+  }
+  .contact > h1 {
+    text-align: center;
+    width: 100%;
+  }
+  .contact > .email-container{
+    width: 100%;
+  }
+}
