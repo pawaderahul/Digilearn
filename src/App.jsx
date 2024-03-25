@@ -7,6 +7,7 @@ import OurClass from "./pages/Our-Class/OurClass";
 import Testimonial from "./pages/Testimonial/Testimonial";
 import Blog from "./pages/Blog/Blog";
 import Contact from "./pages/Contact/Contact";
+import Footer from "./Layout/Footer/Footer";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Testimonial />
       <Blog />
       <Contact />
+      <Footer />
 
       <MoveToTop />
     </>
