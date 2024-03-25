@@ -11,7 +11,7 @@ const MoveToTop = () => {
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
-    
+
     if (scrolled > 300) setVisible(true);
     else if (scrolled <= 300) setVisible(false);
   };
@@ -26,7 +26,6 @@ const MoveToTop = () => {
             <FaArrowUp />
           </figure>
         </button>
-        <div style={{ height: "115px" }}></div>
       </section>
     )
   );

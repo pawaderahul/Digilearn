@@ -14,7 +14,7 @@ const Nav = () => {
 
   return (
     <section className="navbar">
-      <a className="icon-box" href="#home">
+      <a className="icon-box" href="">
         <img src="/assets/logo/Logo.svg" alt="Digilearn Logo" />
       </a>
       <button className="menu" onClick={() => setSidebarOpen(true)}>

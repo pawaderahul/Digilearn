@@ -1,0 +1,127 @@
+@import "../../styles/breakpoints";
+@import "../../styles/variables";
+
+.footer {
+  display: flex;
+  height: 382px;
+  padding: 80px;
+  gap: 171px;
+  justify-content: center;
+  background-color: $text-color;
+
+  h1 {
+    font-family: "Plus Jakarta Sans";
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: left;
+    color: white;
+    margin: 0;
+  }
+
+  .description-container {
+    max-width: 346px;
+
+    figure {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    p {
+      opacity: 0.7;
+      font-family: "Inter";
+      font-size: 20px;
+      line-height: 1.8;
+      letter-spacing: 0.4px;
+      color: white;
+      margin: 0;
+    }
+  }
+
+  .links-container {
+    max-width: 764px;
+    display: flex;
+    gap: 80px;
+
+    h1 {
+      margin-bottom: 16px;
+    }
+
+    ul {
+      margin: 0;
+      list-style: none;
+      padding: 0;
+
+      li > a {
+        opacity: 0.7;
+        font-family: Inter;
+        font-size: 20px;
+        line-height: 1.8;
+        letter-spacing: 0.4px;
+        color: white;
+      }
+    }
+
+    .socials > ul {
+      display: flex;
+    }
+  }
+}
+
+@include media-breakpoint-down(xxl) {
+  .footer {
+    padding: 60px 40px;
+    gap: unset;
+    justify-content: space-between;
+  }
+  .footer > .links-container {
+    gap: 40px;
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .footer {
+    height: auto;
+    padding: 40px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+
+    h1 {
+      text-align: center;
+    }
+
+    .description-container > figure {
+      justify-content: center;
+      margin-left: -39px;
+    }
+    .description-container > p {
+      text-align: center;
+    }
+  }
+  .footer > .links-container {
+    max-width: unset;
+    width: 100%;
+    justify-content: space-around;
+
+    ul {
+      width: fit-content;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+  .footer > .links-container > section {
+    width: calc(100% / 3);
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .footer > .links-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer > .links-container > section {
+    width: 100%;
+  }
+}
