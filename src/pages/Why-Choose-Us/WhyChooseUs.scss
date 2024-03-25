@@ -1,5 +1,6 @@
 @import "../../styles/variables";
 @import "../../styles/breakpoints";
+@import "../../styles/main";
 
 .why-choose-us {
   height: 689px;
@@ -7,11 +8,7 @@
   padding: 80px;
 
   .primary-container > p {
-    font-size: 36px;
-    font-family: "Plus Jakarta Sans";
-    font-weight: 600;
-    line-height: 1.2;
-    text-align: center;
+    @include pageHeadline;
   }
 
   .secondary-container {

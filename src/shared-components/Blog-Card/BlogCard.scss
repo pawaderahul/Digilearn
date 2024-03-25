@@ -1,0 +1,66 @@
+@import "../../styles/variables";
+
+.blog-card {
+  height: 503px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 23px;
+  border-radius: 32px;
+  border: solid 1px $border-color;
+}
+
+.blog-card > .img-container {
+  height: 274px;
+  margin: 0;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.blog-card > .data-container > .flex-container {
+  justify-content: space-between;
+  margin-bottom: 24px;
+
+  figure {
+    display: flex;
+    margin: 0;
+    gap: 8px;
+
+    figcaption {
+      font-family: "Inter";
+      font-size: 14px;
+      line-height: 1.2;
+      letter-spacing: 0.28px;
+      color: $text-color;
+    }
+  }
+}
+
+.blog-card > .data-container > p {
+  height: 66px;
+  font-family: "Plus Jakarta Sans";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: $text-color;
+  margin-bottom: 24px;
+}
+
+.blog-card > .data-container > button {
+  border: 0;
+  background: transparent;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin: 0 auto;
+  opacity: 0.7;
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  color: $text-color;
+}

@@ -1,5 +1,6 @@
 @import "../../styles/variables";
 @import "../../styles/breakpoints";
+@import "../../styles/main";
 
 .our-class {
   height: 1100px;
@@ -7,12 +8,7 @@
 }
 
 .our-class > h1 {
-  font-family: "Plus Jakarta Sans";
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 1.2;
-  text-align: center;
-  color: $text-color;
+  @include pageHeadline;
 }
 
 .our-class > .switch-wrapper-desktop {
@@ -50,20 +46,8 @@
 }
 
 .our-class > .btn {
-  width: 307px;
-  height: 72px;
-  border-radius: 16px;
-  background-color: $color-wine-red;
-  display: flex;
-  gap: 16px;
-  font-family: "Inter";
-  font-size: 20px;
+  @include primary-button;
   font-weight: bold;
-  letter-spacing: 0.4px;
-  color: white;
-  border: 0;
-  justify-content: center;
-  align-items: center;
   margin: 80px auto 0;
 }
 
@@ -112,7 +96,7 @@
     }
   }
 
-  .our-class > .btn{
+  .our-class > .btn {
     margin-top: 42px;
   }
 
